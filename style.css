@@ -1,0 +1,229 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+    }
+
+.main {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+.main-head {
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 490px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+h1 {
+
+	font-size: 32px;
+	color: hsl(229, 6%, 66%);
+
+}
+
+h2 {
+
+	font-weight: bolder;
+	color: hsl(234, 12%, 34%);
+
+}
+
+h3 {
+
+	font-weight: bold;
+	font-size: 22px;
+	color: hsl(234, 12%, 34%);
+
+}
+
+p {
+
+	color: hsl(229, 6%, 66%);
+	text-align: center;
+	margin: 10px 0px;
+
+}
+
+.main-card {
+
+	display: grid;
+	grid-gap: 29px;
+	grid-template-rows: repeat(2, 205px);
+	grid-template-columns: 310px;
+	align-content: center;
+	justify-content: center;
+	margin-left: 23px;
+}
+
+.card {
+
+	padding: 30px;
+	box-shadow: 1px 1px 10px hsl(229, 6%, 66%);
+	border: 0px;
+	height: 215px;
+	
+}
+
+.card p {
+
+	margin: 10px 0px;
+	text-align: initial;
+}
+
+.card img {
+
+	width: 55px;
+	align-self: flex-end;
+	margin: 10px 0px;
+}
+
+.blue {
+
+	grid-column: 1/2;
+	grid-row: 1/2;
+	border-top: 3px solid hsl(212, 86%, 64%);
+	margin-top: 120px;
+
+}
+
+.red {
+
+	grid-column: 2/3;
+	grid-row: 1/2;
+	border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.cyan {
+
+	grid-column: 3/4;
+	grid-row: 1/2;
+	border-top: 3px solid hsl(180, 62%, 55%);
+	margin-top: 120px;
+}
+
+.orange {
+
+	grid-column: 2/3;
+	grid-row: 2/3;
+	border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.design-title p {
+
+	margin-top: 20px;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+
+.main-head {
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 350px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+h1 {
+
+	font-size: 26px;
+
+}
+
+h2 {
+
+	font-size: 26px;
+
+}
+
+.main-head p {
+
+	color: hsl(229, 6%, 66%);
+
+}
+
+.main-card {
+
+	display: grid;
+	grid-gap: 25px;
+	border-radius: 5px;
+	grid-template-columns: 310px;
+	grid-template-rows: 215px 215px 215px 215px;
+	grid-template-areas: 
+
+	" t "
+	" l "
+	" r "
+	" f ";
+	align-content: center;
+	justify-content: center;
+	margin-left: 0px;
+
+}
+
+.card {
+
+	padding: 30px;
+	box-shadow: 1px 1px 10px hsl(229, 6%, 66%);
+	border: 0px;
+}
+
+.blue {
+
+	grid-area: t;
+	border-top: 3px solid hsl(212, 86%, 64%);
+	margin-top: 0px;
+
+}
+
+.red {
+
+	grid-area: l;
+	border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.cyan {
+
+	grid-area: f;
+	border-top: 3px solid hsl(180, 62%, 55%);
+	margin-top: 0px;
+}
+
+.orange {
+
+	grid-area: r;
+	border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+
+
+}
+
+
+    
