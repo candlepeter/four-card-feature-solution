@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryRed: hsl(0, 78%, 62%);
+  --primaryCyan: hsl(180, 62%, 55%);
+  --primaryOrange: hsl(34, 97%, 64%);
+  --primaryBlue: hsl(212, 86%, 64%);
+  --veryDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-size: 15px;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  width: 220px;
+  display: block;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px 1px var(--grayishBlue);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  width: 35px;
+  margin-top: 2em;
+}
+
+.header > h3,
+.header > p,
+.card > p {
+  color: var(--grayishBlue);
+  margin-bottom: 10px;
+  line-height: 1.5em;
+}
+
+.header .sub-head,
+.card > h3 {
+  color: var(--veryDarkBlue);
+  margin-bottom: 10px;
+}
+
+.one {
+  border-top: 4px solid var(--primaryCyan);
+}
+
+.two {
+  border-top: 4px solid var(--primaryRed);
+}
+
+.three {
+  border-top: 4px solid var(--primaryOrange);
+}
+
+.four {
+  border-top: 4px solid var(--primaryBlue);
+}
+
+footer {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 300px;
+    display: block;
+    margin: auto;
+    background: var(--veryLightGray);
+  }
+
+  .header {
+    width: 240px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  .container {
+    width: 1100px;
+    height: 650px;
+    display: block;
+    margin: auto;
+    background: var(--veryLightGray);
+  }
+
+  .one {
+    position: relative;
+    top: 100px;
+    right: 26%;
+  }
+
+  .two {
+    position: relative;
+    top: -220px;
+    right: 0;
+  }
+
+  .three {
+    position: relative;
+    top: -210px;
+    right: 0;
+  }
+
+   .four {
+    position: relative;
+    bottom: 510px;
+    left: 26%;
+  }
+
+  .header {
+    width: 360px;
+  }
+}
+
